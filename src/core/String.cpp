@@ -315,6 +315,10 @@ String String::json_escape() const {
 	return String(godot::api->godot_string_json_escape(&_godot_string));
 }
 
+String String::lcut(int position) {
+	return String(godot::api->godot_string_lcut(&_godot_string, position));
+}
+
 String String::left(int position) const {
 	return String(godot::api->godot_string_left(&_godot_string, position));
 }

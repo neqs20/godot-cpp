@@ -102,6 +102,7 @@ public:
 	bool is_valid_integer() const;
 	bool is_valid_ip_address() const;
 	String json_escape() const;
+	String lcut(int position);
 	String left(int position) const;
 	bool match(String expr) const;
 	bool matchn(String expr) const;
